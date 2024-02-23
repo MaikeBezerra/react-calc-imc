@@ -44,6 +44,10 @@ body {
   outline: 0;
 }
 
+.leftSide input:disabled {
+  opacity: .5;
+}
+
 .leftSide button {
   background-color: #227c9d;
   color: #fff;
@@ -61,6 +65,10 @@ body {
   opacity: .8;
 }
 
+.leftSide button:disabled {
+  opacity: .5;
+}
+
 .rightSide {
   flex: 1;
   margin-left: 40px;
@@ -72,4 +80,24 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.rightBig {
+  flex: 1;
+  display: flex;
+}
+
+.rightArrow {
+  position: absolute;
+  background-color: #227c90;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -35px;
+  margin-top: 145px;
+  transition: all ease .3s;
 }
